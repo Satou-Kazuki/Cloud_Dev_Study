@@ -241,3 +241,5 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://zenn.dev/tantan_tanuki/articles/7796a4f1d6d1b0
 - Ubuntu 20 .04にVNC をインストールして構成 する方法
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04-ja
+- 第683回　LXDコンテナ上にUbuntuのフルデスクトップ環境を構築する
+- https://gihyo.jp/admin/serial/01/ubuntu-recipe/0683
