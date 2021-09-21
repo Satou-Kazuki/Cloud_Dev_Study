@@ -237,3 +237,5 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ja
 - Ubuntu20.04で日本語入力(Mozc)を可能にする方法
 - https://novicengineering.com/ubuntu_mozc_install/
+- DockerもいいけどLXDもね 1 〜LXDEデスクトップ環境の構築〜
+- https://zenn.dev/tantan_tanuki/articles/7796a4f1d6d1b0
