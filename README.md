@@ -239,3 +239,5 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://novicengineering.com/ubuntu_mozc_install/
 - DockerもいいけどLXDもね 1 〜LXDEデスクトップ環境の構築〜
 - https://zenn.dev/tantan_tanuki/articles/7796a4f1d6d1b0
+- Ubuntu 20 .04にVNC をインストールして構成 する方法
+- https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04-ja
