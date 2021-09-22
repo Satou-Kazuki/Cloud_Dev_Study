@@ -247,3 +247,5 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://coeure.co.jp/blog/infrastructure/microsoft-azure/azure-centos-root-210212
 - CentOS7にデスクトップ環境としてGNOMEをインストールする方法
 - https://qiita.com/yasushi-jp/items/cc40e404d2fa15114802
+- WindowsのリモートデスクトップでCentOS 7に接続してみた
+- https://www.bing.com/search?q=github&form=ANNTH1&refig=1ea1c6befe73420d885d577f90824c53
