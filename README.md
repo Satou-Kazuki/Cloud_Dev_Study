@@ -243,3 +243,7 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04-ja
 - 第683回　LXDコンテナ上にUbuntuのフルデスクトップ環境を構築する
 - https://gihyo.jp/admin/serial/01/ubuntu-recipe/0683
+- 【Azure VM】CentOSにrootユーザでログインする方法
+- https://coeure.co.jp/blog/infrastructure/microsoft-azure/azure-centos-root-210212
+- CentOS7にデスクトップ環境としてGNOMEをインストールする方法
+- https://qiita.com/yasushi-jp/items/cc40e404d2fa15114802
