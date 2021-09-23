@@ -237,3 +237,15 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ja
 - Ubuntu20.04で日本語入力(Mozc)を可能にする方法
 - https://novicengineering.com/ubuntu_mozc_install/
+- DockerもいいけどLXDもね 1 〜LXDEデスクトップ環境の構築〜
+- https://zenn.dev/tantan_tanuki/articles/7796a4f1d6d1b0
+- Ubuntu 20 .04にVNC をインストールして構成 する方法
+- https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04-ja
+- 第683回　LXDコンテナ上にUbuntuのフルデスクトップ環境を構築する
+- https://gihyo.jp/admin/serial/01/ubuntu-recipe/0683
+- 【Azure VM】CentOSにrootユーザでログインする方法
+- https://coeure.co.jp/blog/infrastructure/microsoft-azure/azure-centos-root-210212
+- CentOS7にデスクトップ環境としてGNOMEをインストールする方法
+- https://qiita.com/yasushi-jp/items/cc40e404d2fa15114802
+- WindowsのリモートデスクトップでCentOS 7に接続してみた
+- https://www.bing.com/search?q=github&form=ANNTH1&refig=1ea1c6befe73420d885d577f90824c53
