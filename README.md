@@ -14,12 +14,6 @@ git,github,Docker,Vscode,クラウドサービス？なんですかそれは？�
 - 先人が作成してくれた環境のパッケージを用いることにより、最小の労力で環境構築が行えます。
 
 
-# クラウドより先にVPSから利用したほうがいいかも・・・・・・・
-◆VPS（バーチャルプライベートサーバ）◆
-クラウドより安い。
-- ネコでもわかる！さくらのVPS講座 〜第一回：VPSてなんだろう？〜
-- https://knowledge.sakura.ad.jp/7938/?_gl=1*l665d4*_gcl_aw*R0NMLjE2MzI0MzM2MzAuQ2p3S0NBand5N0NLQmhCTUVpd0EwRWI3YW9QZDZBYWxJLTUtT2lzNUJub3ZIMGNqZGZOUEZkTmlvSklZR01uLVNvSXZmUXMzTkpaZFd4b0M2cVVRQXZEX0J3RQ..&_ga=2.149153907.492133002.1632429434-1377883743.1625409629&_gac=1.90834408.1632433630.CjwKCAjwy7CKBhBMEiwA0Eb7aoPd6AalI-5-Ois5BnovH0cjdfNPFdNioJIYGMn-SoIvfQs3NJZdWxoC6qUQAvD_BwE
-
 ◆クラウドマシン環境でのメリット◆←仮想マシン程度の利用ならVPSでサーバ立てたほうが安い・・から先のVPSから試したほうがよさそう。
 - クラウド上にて仮想マシンに環境を構築しているので、RDPで接続するだけで同一環境で作業ができます。
 - 環境を常時稼働させることが出来ます。（従量課金制なのでお金はかかります。1h10円くらい・・？）
@@ -31,6 +25,9 @@ git,github,Docker,Vscode,クラウドサービス？なんですかそれは？�
 
  →慣れたら仮想マシン作成、立ち上げから、開発環境一通り揃えるのに1時間ほどで行える。とても速い。
 
+※追記
+先にクラウドのサービス無料で使えるというので、それで進めてしまったが、利用規模から考えて
+VPS（バーチャルプライベートサーバ）の利用のほうがよさそう・・・・（安い
 
 # Githubのアカウント作成 
 - 参考:https://www.sejuku.net/blog/73468
@@ -257,6 +254,8 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://www.bing.com/search?q=github&form=ANNTH1&refig=1ea1c6befe73420d885d577f90824c53
 
 #VPS関連
+- ネコでもわかる！さくらのVPS講座 〜第一回：VPSてなんだろう？〜
+- https://knowledge.sakura.ad.jp/7938/?_gl=1*l665d4*_gcl_aw*R0NMLjE2MzI0MzM2MzAuQ2p3S0NBand5N0NLQmhCTUVpd0EwRWI3YW9QZDZBYWxJLTUtT2lzNUJub3ZIMGNqZGZOUEZkTmlvSklZR01uLVNvSXZmUXMzTkpaZFd4b0M2cVVRQXZEX0J3RQ..&_ga=2.149153907.492133002.1632429434-1377883743.1625409629&_gac=1.90834408.1632433630.CjwKCAjwy7CKBhBMEiwA0Eb7aoPd6AalI-5-Ois5BnovH0cjdfNPFdNioJIYGMn-SoIvfQs3NJZdWxoC6qUQAvD_BwE
 - ConoHa VPSにGitHubのPrivateリポジトリをCloneする
 - https://create-it-myself.com/know-how/clone-github-private-ripogitory-on-conoha-vps/
 - VPS + Docker で トレンド技術を使いこなす【 第1回： コマンド1行でアプリが動く Docker 
