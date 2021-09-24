@@ -270,4 +270,3 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://qiita.com/yoichi_t/items/c42639d7700089a9eedb
 - VSCodeを使ってAWS EC2のソースコードを編集する
 - https://qiita.com/takao-takass/items/9f81d5095924280966ae
-- 
