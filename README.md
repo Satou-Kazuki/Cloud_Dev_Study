@@ -264,3 +264,5 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://qiita.com/kanosawa/items/07e26edb19c86091fa48
 - Django♪VPSサーバーでDjangoを始めてみたシリーズ
 - https://snowtree-injune.com/django-series-dj000/
+- VSCodeをフロントにしたPython開発環境の個人的ベストプラクティス
+- https://qiita.com/yoichi_t/items/c42639d7700089a9eedb
