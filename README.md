@@ -254,6 +254,8 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://www.bing.com/search?q=github&form=ANNTH1&refig=1ea1c6befe73420d885d577f90824c53
 
 #VPS関連
+- ご利用ガイド マンガで学ぶConoHa
+- https://support.conoha.jp/v/study-03/?btn_id=v-study-02-sidebar_v-study-03
 - ネコでもわかる！さくらのVPS講座 〜第一回：VPSてなんだろう？〜
 - https://knowledge.sakura.ad.jp/7938/?_gl=1*l665d4*_gcl_aw*R0NMLjE2MzI0MzM2MzAuQ2p3S0NBand5N0NLQmhCTUVpd0EwRWI3YW9QZDZBYWxJLTUtT2lzNUJub3ZIMGNqZGZOUEZkTmlvSklZR01uLVNvSXZmUXMzTkpaZFd4b0M2cVVRQXZEX0J3RQ..&_ga=2.149153907.492133002.1632429434-1377883743.1625409629&_gac=1.90834408.1632433630.CjwKCAjwy7CKBhBMEiwA0Eb7aoPd6AalI-5-Ois5BnovH0cjdfNPFdNioJIYGMn-SoIvfQs3NJZdWxoC6qUQAvD_BwE
 - ConoHa VPSにGitHubのPrivateリポジトリをCloneする
@@ -268,3 +270,4 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://qiita.com/yoichi_t/items/c42639d7700089a9eedb
 - VSCodeを使ってAWS EC2のソースコードを編集する
 - https://qiita.com/takao-takass/items/9f81d5095924280966ae
+- 
