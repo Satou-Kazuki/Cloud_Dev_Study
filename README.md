@@ -1,4 +1,4 @@
-# 最近流行りのクラウド仮想開発環境を構築しよう。
+# 最近流行りのVPS or クラウドで仮想開発環境を構築しよう。
 git,github,Docker,Vscode,クラウドサービス？なんですかそれは？という状態から、\
 それぞれの要点を掻い摘んで、なんとか形にしていった時の流れと参考にしたことをまとめました。
 
@@ -14,7 +14,7 @@ git,github,Docker,Vscode,クラウドサービス？なんですかそれは？�
 - 先人が作成してくれた環境のパッケージを用いることにより、最小の労力で環境構築が行えます。
 
 
-◆クラウドマシン環境でのメリット◆
+◆クラウドマシン環境でのメリット◆←仮想マシン程度の利用ならVPSでサーバ立てたほうが安い・・から先のVPSから試したほうがよさそう。
 - クラウド上にて仮想マシンに環境を構築しているので、RDPで接続するだけで同一環境で作業ができます。
 - 環境を常時稼働させることが出来ます。（従量課金制なのでお金はかかります。1h10円くらい・・？）
 - 耐障害性が高い。
@@ -25,6 +25,9 @@ git,github,Docker,Vscode,クラウドサービス？なんですかそれは？�
 
  →慣れたら仮想マシン作成、立ち上げから、開発環境一通り揃えるのに1時間ほどで行える。とても速い。
 
+※追記
+先にクラウドのサービス無料で使えるというので、それで進めてしまったが、利用規模から考えて
+VPS（バーチャルプライベートサーバ）の利用のほうがよさそう・・・・（安い
 
 # Githubのアカウント作成 
 - 参考:https://www.sejuku.net/blog/73468
@@ -249,3 +252,23 @@ Azure PortalからRDP接続用ショートカットのようなものがダウ�
 - https://qiita.com/yasushi-jp/items/cc40e404d2fa15114802
 - WindowsのリモートデスクトップでCentOS 7に接続してみた
 - https://www.bing.com/search?q=github&form=ANNTH1&refig=1ea1c6befe73420d885d577f90824c53
+
+#VPS関連
+- ご利用ガイド マンガで学ぶConoHa
+- https://support.conoha.jp/v/study-03/?btn_id=v-study-02-sidebar_v-study-03
+- ネコでもわかる！さくらのVPS講座 〜第一回：VPSてなんだろう？〜
+- https://knowledge.sakura.ad.jp/7938/?_gl=1*l665d4*_gcl_aw*R0NMLjE2MzI0MzM2MzAuQ2p3S0NBand5N0NLQmhCTUVpd0EwRWI3YW9QZDZBYWxJLTUtT2lzNUJub3ZIMGNqZGZOUEZkTmlvSklZR01uLVNvSXZmUXMzTkpaZFd4b0M2cVVRQXZEX0J3RQ..&_ga=2.149153907.492133002.1632429434-1377883743.1625409629&_gac=1.90834408.1632433630.CjwKCAjwy7CKBhBMEiwA0Eb7aoPd6AalI-5-Ois5BnovH0cjdfNPFdNioJIYGMn-SoIvfQs3NJZdWxoC6qUQAvD_BwE
+- ConoHa VPSにGitHubのPrivateリポジトリをCloneする
+- https://create-it-myself.com/know-how/clone-github-private-ripogitory-on-conoha-vps/
+- VPS + Docker で トレンド技術を使いこなす【 第1回： コマンド1行でアプリが動く Docker 
+- https://www.kagoya.jp/howto/cloud/container/vps-docker-01/
+- ssh接続先のdockerコンテナにVSCodeのRemote Developmentで繋ぐ
+- https://qiita.com/kanosawa/items/07e26edb19c86091fa48
+- Django♪VPSサーバーでDjangoを始めてみたシリーズ
+- https://snowtree-injune.com/django-series-dj000/
+- VSCodeをフロントにしたPython開発環境の個人的ベストプラクティス
+- https://qiita.com/yoichi_t/items/c42639d7700089a9eedb
+- VSCodeを使ってAWS EC2のソースコードを編集する
+- https://qiita.com/takao-takass/items/9f81d5095924280966ae
+- デスクトップ環境 : VNC サーバーの設定
+- https://www.server-world.info/query?os=Ubuntu_21.04&p=desktop&f=5
