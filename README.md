@@ -188,9 +188,9 @@ The directory /opt/conda/bin/python is the directory in the container Linux.
 - When you use resources in the cloud with Azure, you will be charged on a pay-as-you-go basis. (Azure is free for 30 days and $200 minutes)
 - Reference: Standard virtual machine, 10 yen per 1 hour, about 9,000 yen per month of full operation (depending on how the resources are used)
 
-# Azure Portalでクラウド上にLinux仮想マシンを作成（windows環境とかもあります）
-# Create a Linux virtual machine in the cloud with Azure Portal (windows environment is also available)
-◆注意点◆<strong>Points to note</strong>
+# Azure Portalでクラウド上にLinux仮想マシン(ubuntu)を作成（windows環境とかもあります）
+# Create a Linux(ubuntu) virtual machine in the cloud with Azure Portal (windows environment is also available)
+◆注意点◆<strong>Points to note</strong><br>
 作成の流れ自体はその辺のサイトに書いている内容で問題ありませんが、下記注意点あり。<br>
 初期設定でSSH:22、RDP:3389のポート開放をチェック→　あとで設定はできますが、最初にしてるほうが楽。<br>
 ポート番号22：SSH接続で使うポート<br>
@@ -203,7 +203,7 @@ Port number 3389: Port used for remote desktop from our side to the virtual mach
 </strong>
 
 
-◆SSH接続について◆<strong>About SSH connection</strong>
+◆SSH接続について◆<strong>About SSH connection</strong><br>
 【******(設定したユーザー名).pem】という秘密鍵がダウンロードされますが、これがパスワードの代わりのようなものになります。<br>
 最初Linux環境にパスワードが設定されていない状態なので、SSHで接続を行います。<br>
 Azure CLIか Tera Termのようなもので接続する必要があります。<br>
@@ -226,9 +226,11 @@ DNSとは・・IPアドレスに名前を付けて、その名前を元に接続
 これなしでパブリックIPアドレスからRDP接続を行っていると、マシンを起動しなおす毎にアドレスが振りなおされ
 一々確認して入力する必要が生じ、面倒です。
 ```
+<strong>
 Once the virtual machine is up and running, it will appear in the Azure Portal, where you can start, restart, stop and configure other settings.<br>
 Press down on the basic page, followed by public IP address, virtual network/subnet, and then something like unconfigured underneath.<br>
 This is where you can configure the DNS (Domain Name System) setting<br>
+</strong>
 ```
 DNS is a system for naming IP addresses so that connections can be made based on those names, much like URLs on the web.
 If you are using RDP connections from a public IP address without DNS, the address will be reassigned every time you reboot the machine.
@@ -236,27 +238,31 @@ If you are using RDP connections from a public IP address without this, the addr
 ```
 
 
-◆Teratermでの接続について◆\About the connection with Teraterm
-Teratermに設定したDNS名（パブリックIPアドレスでも構わない）を入力して、SSHで接続を行います。\
-何か表示されますが、そのままOKして設定したSSH接続で設定した【ユーザー名】入力と、\
-→Teratermは初期画面でSSH ポート番号22を指定します。\
-認証方式で【RSA/DSA/ECDSA/ED25519鍵を使う】を選択し、【******(設定したユーザー名).pem】を選択してSSH接続を行う。
+◆Teratermでの接続について◆<strong>About the connection with Teraterm</strong><br>
+Teratermに設定したDNS名（パブリックIPアドレスでも構わない）を入力して、SSHで接続を行います。<br>
+何か表示されますが、そのままOKして設定したSSH接続で設定した【ユーザー名】入力と、<br>
+→Teratermは初期画面でSSH ポート番号22を指定します。<br>
+認証方式で【RSA/DSA/ECDSA/ED25519鍵を使う】を選択し、【******(設定したユーザー名).pem】を選択してSSH接続を行う。<br>
+<strong>
 Enter the DNS name (or public IP address) that you configured on Teraterm, and connect to the server via SSH.
 You will be prompted something, OK as it is and enter the [User name] configured in the SSH connection you set up.
 →Teraterm specifies the SSH port number 22 in the initial screen.
 Select [Use RSA/DSA/ECDSA/ED25519 key] for the authentication method and select [******(username you set).pem] to connect to SSH.
+ </strong>
 
 
-【Install and configure xrdp to use Remote Desktop with Ubuntu】\
+【Install and configure xrdp to use Remote Desktop with Ubuntu】<br>
  https://docs.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop
 
 
 # クラウドマシンへ接続のち下記実施
 # Connect to the cloud machine and do the following
-Azure CLIインストール\
-Linux側リモート接続するためのアプリをコマンドでインストールします。
+Azure CLIインストール<br>
+Linux側リモート接続するためのアプリをコマンドでインストールします。<br>
+<strong>
 Azure CLI installation
 Install the application for remote connection on the Linux side using the command.
+</strong>
 ```
 sudo apt-get update
 sudo apt-get -y install xfce4
@@ -266,28 +272,32 @@ sudo systemctl enable xrdp
 echo xfce4-session >~/.xsession
 sudo service xrdp restart
 ```
-- 仮想マシンにパスワードを設定します。\
-→sudo passwd (入れたいパスワード）下記いれるとazureuserというパスワードが設定されます。
+- 仮想マシンにパスワードを設定します。<br>
+→sudo passwd (入れたいパスワード）下記いれるとazureuserというパスワードが設定されます。<br>
 - Set a password for the virtual machine.
-→sudo passwd (the password you want to enter) Enter the following to set the password as azureuser.
+→sudo passwd (the password you want to enter) Enter the following to set the password as azureuser.<br>
 ```
 sudo passwd azureuser
 ```
-- Azure CLIインストールした後、windows powershellで下記コマンド実施します。\
+- Azure CLIインストールした後、windows powershellで下記コマンド実施します。<br>
  【myResourceGroup】に自分のリソースグループ名、【myVM】に自分の仮想マシン名をいれます。
-- After installing Azure CLI, execute the following command in windows powershell.
+<strong>
+- After installing Azure CLI, execute the following command in windows powershell.<br>
  Enter your resource group name in [myResourceGroup] and your virtual machine name in [myVM].
+ </strong>
 ```
 az vm open-port --resource-group myResourceGroup --name myVM --port 3389
 ```
-以上、ubuntuデスクトップへのリモート接続の準備完了となります。
+以上、ubuntuデスクトップへのリモート接続の準備完了となります。<br>
+<strong>
 This completes the preparation for remote connection to the ubuntu desktop.
+</br>
 
 
 # ローカルマシンからクラウドマシンへリモート接続
-◆Windowsリモートデスクトップ接続◆\
-例：111.111.111.111:3389　（111.111.111.111)の部分には仮想マシンのパブリックIPか設定したDNS名を入れます。\
-これで、問題がなければ、ubuntu認証画面が起動しますので、下記内容にてログインします。
+◆Windowsリモートデスクトップ接続◆<br>
+例：111.111.111.111:3389　（111.111.111.111)の部分には仮想マシンのパブリックIPか設定したDNS名を入れます。<br>
+これで、問題がなければ、ubuntu認証画面が起動しますので、下記内容にてログインします。<br>
 ```
 【Login to my Xdrp】
 【Session】:Xorg
