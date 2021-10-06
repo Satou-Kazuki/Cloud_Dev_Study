@@ -25,17 +25,17 @@ I used when I went from knowing almost nothing to summarizing and shaping the ke
 
 
 <strong></strong><br>
-◆クラウドマシン環境側でのメリット◆:Benefits on the cloud machine environment side
-- クラウド上にて仮想マシンに環境を構築しているので、RDPで接続するだけで同一環境で作業ができます。
-- The environment is built on a virtual machine in the cloud, so you can work in the same environment just by connecting via RDP.
-- 環境を常時稼働させることが出来ます。（従量課金制なのでお金はかかります。1h10円程）
-- You can run the environment all the time. (It's a pay-as-you-go system, so you will have to pay for it, about 10 yen per hour.
-- 耐障害性が高い。
-- High fault tolerance.
-- マシンリソースのグレードアップが容易。
-- Easy to upgrade machine resources
-- クラウド上のリソースを用いることが出来る。（画像分析やテキスト分析等）
-- Resources in the cloud can be used. (Image analysis, text analysis, etc.)
+◆クラウドマシン環境側でのメリット◆:<strong>Benefits on the cloud machine environment side</strong>
+- クラウド上にて仮想マシンに環境を構築しているので、RDPで接続するだけで同一環境で作業ができます。<br>
+<strong>The environment is built on a virtual machine in the cloud, so you can work in the same environment just by connecting via RDP.</strong>
+- 環境を常時稼働させることが出来ます。（従量課金制なのでお金はかかります。1h10円程）<br>
+<strong>You can run the environment all the time. (It's a pay-as-you-go system, so you will have to pay for it, about 10 yen per hour.
+- 耐障害性が高い。<br>
+<strong>High fault tolerance.</strong>
+- マシンリソースのグレードアップが容易。<br>
+<strong>Easy to upgrade machine resources</strong>
+- クラウド上のリソースを用いることが出来る。（画像分析やテキスト分析等）<br>
+<strong>Resources in the cloud can be used. (Image analysis, text analysis, etc.)</strong>
 
 
  →慣れたら仮想マシン作成、立ち上げから、開発環境一通り揃えるのに1時間ほどで行えます。とても速い。
