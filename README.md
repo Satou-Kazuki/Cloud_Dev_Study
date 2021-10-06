@@ -47,24 +47,33 @@ I used when I went from knowing almost nothing to summarizing and shaping the ke
 ※追記
 先にクラウドのサービス無料で使えるというので、それで進めてしまいましたが、仮想マシンに限定すれば\
 VPSサービスのほうが費用を抑えられます。\
-ただ、クラウドサービスにはAIのデータセット等あり、それらのリソースを利用することが出来ます。
+ただ、クラウドサービスにはAIのデータセット等あり、それらのリソースを利用することが出来ます。<br>
+<strong>
+I went ahead and used the free cloud service, but if you limit yourself to virtual machines, the VPS service is more cost effective.
+However, the cloud service has AI data sets and other resources that can be used.
+</strong>
+
 
 # Githubのアカウント作成 
+# Create a Github account 
 - 参考:https://www.sejuku.net/blog/73468
 
 
 # gitインストール
+# git install
 - https://git-scm.com/
 - 参考:https://kitsune.blog/engineer/git
 
 
-# VSCodeインストール 
+# VSCodeインストール
+# VSCode installation 
 - https://azure.microsoft.com/ja-jp/products/visual-studio-code/
 - 参考github連携：https://breezegroup.co.jp/202102/vscode-github-windows/
 - 参考Docker連携：https://qiita.com/Yuki_Oshima/items/d3b52c553387685460b0
 
 
 # Dockerインストール
+# Docker installation
 - https://www.docker.com/
 - 参考：https://www.pasonatech.co.jp/workstyle/column/detail.html?p=2675
 - 使ってるイメージファイル：https://hub.docker.com/r/jupyter/datascience-notebook/tags?page=1&ordering=last_updated
@@ -73,6 +82,7 @@ VPSサービスのほうが費用を抑えられます。\
 
 
 # 上記インストールが終わったら、下記参考ページ
+# Reference page
 - Docker + VSCode + Remote Containerで作る快適Jupyter Lab(Python)分析環境
 - https://qiita.com/sho-hata/items/02ad47f67bce6816a69a
 - VSCode Remote Containerが良い
@@ -88,6 +98,7 @@ VPSサービスのほうが費用を抑えられます。\
 
 
 # ゼロから環境構築
+# Build an environment from scratch
 ◆Git、Docker、VSCodeインストール、Githubのアカウント作成◆\
 VSCode内、下記拡張機能インストールを行う。\
 【Japanese Language Pack , Python , Remote Development , Docker】\
