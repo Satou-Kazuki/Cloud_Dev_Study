@@ -283,10 +283,8 @@ sudo passwd azureuser
 - Azure CLIインストールした後、windows powershellで下記コマンド実施します。<br>
  【myResourceGroup】に自分のリソースグループ名、【myVM】に自分の仮想マシン名をいれます。
 
-<strong>
 - After installing Azure CLI, execute the following command in windows powershell.<br>
  Enter your resource group name in [myResourceGroup] and your virtual machine name in [myVM].
-</strong>
 
 ```
 az vm open-port --resource-group myResourceGroup --name myVM --port 3389
