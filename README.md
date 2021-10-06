@@ -147,7 +147,7 @@ OS:Linuxのubuntu-20.04\
 anaconda, python:3.9.6 , JupyterLab ,Various libraries
 
 
-◆VSCode Docker,Github連携について◆<strong>About VSCode Docker and Github integration</strong><br>
+ ◆VSCode Docker,Github連携について◆<strong>About VSCode Docker and Github integration</strong><br>
 VSCode下部タスクバーみたいなところに><のようなアイコンがあり、<br>
 【><】の横にDev Container:Jupyter Projectと表示されます。<br>
 【><】のアイコンからコンテナを停止させる等操作が行えます。<br>
@@ -183,51 +183,52 @@ The directory /opt/conda/bin/python is the directory in the container Linux.
 - なしで利用する場合・・・https://www.acrovision.jp/service/azure/?p=1258
 - Azureでクラウド上リソースの利用に際して、従量課金制となり、お金はかかります。（Azureは30日$200分無料）
 - 参考：標準的な仮想マシン、1H毎10円 1ヵ月フル稼働で9000円ほど（リソースの利用具合によっても変わります）
-<strong>
 - Create an account with azure: You will need to register a credit card.
 - To use it without... https://www.acrovision.jp/service/azure/?p=1258
 - When you use resources in the cloud with Azure, you will be charged on a pay-as-you-go basis. (Azure is free for 30 days and $200 minutes)
 - Reference: Standard virtual machine, 10 yen per 1 hour, about 9,000 yen per month of full operation (depending on how the resources are used)
-</strong>
 
 # Azure Portalでクラウド上にLinux仮想マシンを作成（windows環境とかもあります）
 # Create a Linux virtual machine in the cloud with Azure Portal (windows environment is also available)
-◆注意点◆\Points to note
-作成の流れ自体はその辺のサイトに書いている内容で問題ありませんが、下記注意点あり。\
-初期設定でSSH:22、RDP:3389のポート開放をチェック→　あとで設定はできますが、最初にしてるほうが楽。\
-ポート番号22：SSH接続で使うポート\
-ポート番号3389：こちら側から仮想マシンへリモートデスクトップするために使うポート
+◆注意点◆<strong>Points to note</strong>
+作成の流れ自体はその辺のサイトに書いている内容で問題ありませんが、下記注意点あり。<br>
+初期設定でSSH:22、RDP:3389のポート開放をチェック→　あとで設定はできますが、最初にしてるほうが楽。<br>
+ポート番号22：SSH接続で使うポート<br>
+ポート番号3389：こちら側から仮想マシンへリモートデスクトップするために使うポート<br>
+<strong>
 The creation process itself is fine as described in those sites, but there are some cautions below.
 Check the SSH:22 and RDP:3389 port openings in the default settings → You can set this later, but it is easier to do it first.
 Port number 22: Port used for SSH connection
 Port number 3389: Port used for remote desktop from our side to the virtual machine.
+</strong>
 
 
-◆SSH接続について◆\About SSH connection
-【******(設定したユーザー名).pem】という秘密鍵がダウンロードされますが、これがパスワードの代わりのようなものになります。\
-→しっかりと保存する。\
-最初Linux環境にパスワードが設定されていない状態なので、SSHで接続を行います。\
-Azure CLIか Tera Termのようなもので接続する必要があります。
-・Teratarm:端末へSSH接続を行うためのソフト。インストールします。
+◆SSH接続について◆<strong>About SSH connection</strong>
+【******(設定したユーザー名).pem】という秘密鍵がダウンロードされますが、これがパスワードの代わりのようなものになります。<br>
+最初Linux環境にパスワードが設定されていない状態なので、SSHで接続を行います。<br>
+Azure CLIか Tera Termのようなもので接続する必要があります。<br>
+Teratarm:端末へSSH接続を行うためのソフト。インストールします。<br>
+<strong>
 A private key named [******(username you set).pem] will be downloaded, which is a kind of password substitute.
 Since there is no password set in the Linux environment at first, we will use SSH to connect.
 You will need to use Azure CLI or something like Tera Term to connect.
 Teratarm: A software for SSH connection to the terminal. Install it.
+</strong>
 
 
 # Azure PortalとTeraterm
-◆Azure Portal◆\
-仮想マシンが立ち上がると、Azure Portalに表示された状態になり、開始、再起動、停止やその他設定が行えます。\
-基本ページ、パブリックIPアドレス、仮想ネットワーク／サブネットと続き、その下の未設定みたいなところを押下。\
-ここでDNS（ドメインネームシステム）を設定が出来るので、設定します。
+◆Azure Portal◆<br>
+仮想マシンが立ち上がると、Azure Portalに表示された状態になり、開始、再起動、停止やその他設定が行えます。<br>
+基本ページ、パブリックIPアドレス、仮想ネットワーク／サブネットと続き、その下の未設定みたいなところを押下。<br>
+ここでDNS（ドメインネームシステム）を設定が出来るので、設定します。<br>
 ```
 DNSとは・・IPアドレスに名前を付けて、その名前を元に接続を行えるようにする物。WEBのURLみたいなもの。
 これなしでパブリックIPアドレスからRDP接続を行っていると、マシンを起動しなおす毎にアドレスが振りなおされ
 一々確認して入力する必要が生じ、面倒です。
 ```
-Once the virtual machine is up and running, it will appear in the Azure Portal, where you can start, restart, stop and configure other settings.
-Press down on the basic page, followed by public IP address, virtual network/subnet, and then something like unconfigured underneath.
-This is where you can configure the DNS (Domain Name System) setting
+Once the virtual machine is up and running, it will appear in the Azure Portal, where you can start, restart, stop and configure other settings.<br>
+Press down on the basic page, followed by public IP address, virtual network/subnet, and then something like unconfigured underneath.<br>
+This is where you can configure the DNS (Domain Name System) setting<br>
 ```
 DNS is a system for naming IP addresses so that connections can be made based on those names, much like URLs on the web.
 If you are using RDP connections from a public IP address without DNS, the address will be reassigned every time you reboot the machine.
