@@ -120,7 +120,7 @@ https://github.com/Satou-Kazuki/Cloud_Dev_Study.git
 1.Do this by entering commands from git bash.
 2.Do this from the folder management of VSCode.
 In this case, we will use method 2.
-<strong>
+</strong>
   
   
 ◆クローン後の流れ◆<strong>Flow after cloning</strong><br>
