@@ -15,13 +15,13 @@ I used when I went from knowing almost nothing to summarizing and shaping the ke
 <strong>Start a virtual machine on the cloud service and build a similar virtual development environment in the cloud.</strong>
 <br>
 <br>
-◆ローカルマシン環境側でのメリット◆<strong>Benefits on the local machine environment side</strong><br>
+◆ローカルマシン環境側でのメリット◆<strong>Benefits on the local machine environment side</strong>
 - パソコンごとに環境の選択やライブラリの選択や細々とした設定インストールをする必要がなくなります。<br>
-<strong>You no longer need to choose an environment, select a library, and install detailed settings for each computer.</strong><br>
+<strong>You no longer need to choose an environment, select a library, and install detailed settings for each computer.</strong>
 - コンテナ単位で環境を構築するので、問題が生じた環境の破棄及び再生成が容易になります。<br>
-<strong>Since the environment is built in containers, it is easy to destroy and regenerate the environment if a problem occurs.</strong><br>
+<strong>Since the environment is built in containers, it is easy to destroy and regenerate the environment if a problem occurs.</strong>
 - 先人が作成してくれた環境のパッケージを用いることにより、最小の労力で環境構築が行えます。<br>
-<strong>By using the environment packages created by our predecessors, we can build the environment with minimal effort.</strong><br>
+<strong>By using the environment packages created by our predecessors, we can build the environment with minimal effort.</strong>
 <br>
 <br>
 
