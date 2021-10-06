@@ -117,8 +117,8 @@ https://github.com/Satou-Kazuki/Cloud_Dev_Study.git
 2.VSCodeのフォルダ管理から行う。\
 今回は2の方法を利用します。<br>
 <strong>
-1.Do this by entering commands from git bash.
-2.Do this from the folder management of VSCode.
+1.Do this by entering commands from git bash.<br>
+2.Do this from the folder management of VSCode.<br>
 In this case, we will use method 2.
 </strong>
   
@@ -161,14 +161,16 @@ In the taskbar, the ball and ↑↓ are for pulling, committing, and pushing to 
 </strong>
 
 
-◆連携の流れ◆\Flow of collaboration
-コンテナ内Linux環境下あるJupyterLabとpythonインタプリタへ、ローカルのVScodeからリモートでアクセスを行い、\
-ローカルで作業している感覚と変わらず作業が行えます。\
-/opt/conda/bin/pythonのPython 3.9.6のインタプリタが選択できれば、うまく連携出来ています。\
-/opt/conda/bin/pythonというディレクトリはコンテナLinux内ディレクトリとなります。
+◆連携の流れ◆<strong>Flow of collaboration</strong><br>
+コンテナ内Linux環境下あるJupyterLabとpythonインタプリタへ、ローカルのVScodeからリモートでアクセスを行い、<br>
+ローカルで作業している感覚と変わらず作業が行えます。<br>
+/opt/conda/bin/pythonのPython 3.9.6のインタプリタが選択できれば、うまく連携出来ています。<br>
+/opt/conda/bin/pythonというディレクトリはコンテナLinux内ディレクトリとなります。<br>
+<strong>
 You can remotely access JupyterLab and the python interpreter in the Linux environment in the container from your local VScode, and work as if you were working locally.
 If you can select the Python 3.9.6 interpreter in /opt/conda/bin/python, you have a good connection.
 The directory /opt/conda/bin/python is the directory in the container Linux.
+ </strong>
 
 
 # ここまでくればgithub　リポジトリからコードを貰ったり上げたり、チーム開発を行えるようになっています。
