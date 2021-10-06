@@ -1,20 +1,18 @@
 # 最近流行りのVPS or クラウドで仮想開発環境を構築しよう。
 # Let's build a virtual development environment with VPS or Cloud, which is popular these days.
 git,github,Docker,Vscode,クラウドサービス？なんですかそれは？という状態から、<br>
-それぞれの要点を掻い摘んで、なんとか形にしていった時の流れと参考にしたことをまとめました。<br>
+それぞれの要点を掻い摘んで、なんとか形にしていった時の流れと参考にしたことをまとめました。<br><br>
 <strong>
 git,github,docker,vscode,cloud services? This is a summary of the process and references\
 I used when I went from knowing almost nothing to summarizing and shaping the key points of each.
 </strong>
 
 
-◆目的◆:purpose
+◆目的◆:<strong>Purpose</strong>
 - ローカル環境に、github,Docker,VScodeを用いて、仮想開発環境を構築。
 <strong>Build a virtual development environment in the local environment using github, Docker, and VScode.</strong>
-
 - クラウドサービス上に仮想マシンを起動させ、クラウド上に同じような仮想開発環境を構築。
 - Start a virtual machine on the cloud service and build a similar virtual development environment in the cloud.
-
 
 ◆ローカルマシン環境側でのメリット◆Benefits on the local machine environment side
 - パソコンごとに環境の選択やライブラリの選択や細々とした設定インストールをする必要がなくなります。
