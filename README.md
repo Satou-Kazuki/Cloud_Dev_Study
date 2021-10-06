@@ -13,8 +13,8 @@ I used when I went from knowing almost nothing to summarizing and shaping the ke
 <strong>Build a virtual development environment in the local environment using github, Docker, and VScode.</strong>
 - クラウドサービス上に仮想マシンを起動させ、クラウド上に同じような仮想開発環境を構築。<br>
 <strong>Start a virtual machine on the cloud service and build a similar virtual development environment in the cloud.</strong>
-<br>
-<br>
+
+
 ◆ローカルマシン環境側でのメリット◆<strong>Benefits on the local machine environment side</strong>
 - パソコンごとに環境の選択やライブラリの選択や細々とした設定インストールをする必要がなくなります。<br>
 <strong>You no longer need to choose an environment, select a library, and install detailed settings for each computer.</strong>
@@ -22,8 +22,7 @@ I used when I went from knowing almost nothing to summarizing and shaping the ke
 <strong>Since the environment is built in containers, it is easy to destroy and regenerate the environment if a problem occurs.</strong>
 - 先人が作成してくれた環境のパッケージを用いることにより、最小の労力で環境構築が行えます。<br>
 <strong>By using the environment packages created by our predecessors, we can build the environment with minimal effort.</strong>
-<br>
-<br>
+
 
 <strong></strong><br>
 ◆クラウドマシン環境側でのメリット◆:Benefits on the cloud machine environment side
