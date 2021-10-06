@@ -3,14 +3,14 @@
 git,github,Docker,Vscode,クラウドサービス？なんですかそれは？という状態から、<br>
 それぞれの要点を掻い摘んで、なんとか形にしていった時の流れと参考にしたことをまとめました。<br><br>
 <strong>
-git,github,docker,vscode,cloud services? This is a summary of the process and references\
-I used when I went from knowing almost nothing to summarizing and shaping the key points of each.
+git,Github,docker,vscode,cloud services? This is a summary of the process and references\
+I used it when I went from knowing almost nothing to summarizing and shaping the key points of each.
 </strong>
 
 
 ◆目的◆:<strong>Purpose</strong>
 - ローカル環境に、github,Docker,VScodeを用いて、仮想開発環境を構築。<br>
-<strong>Build a virtual development environment in the local environment using github, Docker, and VScode.</strong>
+<strong>Build a virtual development environment in the local environment using Github, Docker, and VScode.</strong>
 - クラウドサービス上に仮想マシンを起動させ、クラウド上に同じような仮想開発環境を構築。<br>
 <strong>Start a virtual machine on the cloud service and build a similar virtual development environment in the cloud.</strong>
 
@@ -20,7 +20,7 @@ I used when I went from knowing almost nothing to summarizing and shaping the ke
 - パソコンごとに環境の選択やライブラリの選択や細々とした設定インストールをする必要がなくなります。<br>
 <strong>You no longer need to choose an environment, select a library, and install detailed settings for each computer.</strong>
 - コンテナ単位で環境を構築するので、問題が生じた環境の破棄及び再生成が容易になります。<br>
-<strong>Since the environment is built in containers, it is easy to destroy and regenerate the environment if a problem occurs.</strong>
+<strong>Since the environment is built-in containers, it is easy to destroy and regenerate the environment if a problem occurs.</strong>
 - 先人が作成してくれた環境のパッケージを用いることにより、最小の労力で環境構築が行えます。<br>
 <strong>By using the environment packages created by our predecessors, we can build the environment with minimal effort.</strong>
 
@@ -45,12 +45,12 @@ I used when I went from knowing almost nothing to summarizing and shaping the ke
  start it up, and set up the entire development environment. Very fast.
  </strong>
 
-※追記
+※追記<br>
 先にクラウドのサービス無料で使えるというので、それで進めてしまいましたが、仮想マシンに限定すれば\
 VPSサービスのほうが費用を抑えられます。\
 ただ、クラウドサービスにはAIのデータセット等あり、それらのリソースを利用することが出来ます。<br>
 <strong>
-I went ahead and used the free cloud service, but if you limit yourself to virtual machines, the VPS service is more cost effective.
+I went ahead and used the free cloud service, but if you limit yourself to virtual machines, the VPS service is more cost-effective.
 However, the cloud service has AI data sets and other resources that can be used.
 </strong>
 
@@ -112,31 +112,35 @@ Install the following extensions in VSCode.
 https://github.com/Satou-Kazuki/Cloud_Dev_Study.git
 
 
-◆リポジトリのクローン方法◆\How to clone the repository
+◆リポジトリのクローン方法◆:<strong>How to clone the repository</strong><br>
 1.git bashから、コマンド入力で行う。\
 2.VSCodeのフォルダ管理から行う。\
-今回は2の方法を利用します。
+今回は2の方法を利用します。<br>
 1.Do this by entering commands from git bash.
 2.Do this from the folder management of VSCode.
 In this case, we will use method 2.
   
   
-◆クローン後の流れ◆\Flow after cloning
+◆クローン後の流れ◆:<strong>Flow after cloning</strong><br>
 クローンを行うと、指定したフォルダ配下にローカルリポジトリが作成され、リモートリポジトリのコピーが作成されます。\
 クローンしたCloud_Dev_Studyには、Dockerのコンテナファイルが入っていますので、\
 VSCode内にて、コンテナ作成の案内が来ます。OK押下しますと、イメージを元にコンテナ作成が行われます。\
-→今回使うイメージはjupyter/datascience-notebookでDockerHubに公開されているものを利用。
+→今回使うイメージはjupyter/datascience-notebookでDockerHubに公開されているものを利用。<br>
+<strong>
 When you clone, a local repository is created under the specified folder and a copy of the remote repository is created.
 The cloned Cloud_Dev_Study contains a Docker container file, so you will be prompted to create a container in VSCode
 →The image we will use is jupyter/datascience-notebook, which is available on DockerHub.
+</strong>
 
 
-◆コンテナについて◆\About containers
-LinuxOSを元に、最小単一の機能で、必要なアプリをインストールした仮想環境という感じの物になります。
+◆コンテナについて◆:<strong>About containers</strong><br>
+LinuxOSを元に、最小単一の機能で、必要なアプリをインストールした仮想環境という感じの物になります。<br>
+<strong>
 It is a virtual environment based on the Linux operating system, with a minimum of a single function, and the necessary applications installed.
+</strong>
 
 
-◆今回使っているイメージ◆\Image used in this project
+◆今回使っているイメージ◆:<strong>Image used in this project</strong><br>
 OS:Linuxのubuntu-20.04\
 anaconda, python:3.9.6 , JupyterLab ,Various libraries\
 
@@ -174,10 +178,12 @@ The directory /opt/conda/bin/python is the directory in the container Linux.
 - なしで利用する場合・・・https://www.acrovision.jp/service/azure/?p=1258
 - Azureでクラウド上リソースの利用に際して、従量課金制となり、お金はかかります。（Azureは30日$200分無料）
 - 参考：標準的な仮想マシン、1H毎10円 1ヵ月フル稼働で9000円ほど（リソースの利用具合によっても変わります）
+<strong>
 - Create an account with azure: You will need to register a credit card.
 - To use it without... https://www.acrovision.jp/service/azure/?p=1258
 - When you use resources in the cloud with Azure, you will be charged on a pay-as-you-go basis. (Azure is free for 30 days and $200 minutes)
 - Reference: Standard virtual machine, 10 yen per 1 hour, about 9,000 yen per month of full operation (depending on how the resources are used)
+</strong>
 
 # Azure Portalでクラウド上にLinux仮想マシンを作成（windows環境とかもあります）
 # Create a Linux virtual machine in the cloud with Azure Portal (windows environment is also available)
