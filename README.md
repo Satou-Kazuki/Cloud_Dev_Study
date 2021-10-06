@@ -9,10 +9,11 @@ I used when I went from knowing almost nothing to summarizing and shaping the ke
 
 
 ◆目的◆:<strong>Purpose</strong>
-- ローカル環境に、github,Docker,VScodeを用いて、仮想開発環境を構築。<br>
-<strong>Build a virtual development environment in the local environment using github, Docker, and VScode.</strong>
-- クラウドサービス上に仮想マシンを起動させ、クラウド上に同じような仮想開発環境を構築。<br>
-<strong>Start a virtual machine on the cloud service and build a similar virtual development environment in the cloud.</strong>
+- ローカル環境に、github,Docker,VScodeを用いて、仮想開発環境を構築。
+- クラウドサービス上に仮想マシンを起動させ、クラウド上に同じような仮想開発環境を構築。<br><br>
+- <strong>Build a virtual development environment in the local environment using github, Docker, and VScode.</strong>
+- <strong>Start a virtual machine on the cloud service and build a similar virtual development environment in the cloud.</strong>
+
 
 
 ◆ローカルマシン環境側でのメリット◆<strong>Benefits on the local machine environment side</strong>
