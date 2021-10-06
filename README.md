@@ -103,8 +103,8 @@ However, the cloud service has AI data sets and other resources that can be used
 ◆Git、Docker、VSCodeインストール、Githubのアカウント作成◆<br>
 VSCode内、下記拡張機能インストールを行う。<br>
 <strong>
-Install Git, Docker, VSCode, and create a Github account.
-Install the following extensions in VSCode.
+Install Git, Docker, VSCode, and create a Github account.<br>
+Install the following extensions in VSCode.<br>
 </strong><br>
 【Japanese Language Pack , Python , Remote Development , Docker】<br>
 ◆githubのリポジトリからローカル環境へクローンする。◆<br>
@@ -113,8 +113,8 @@ https://github.com/Satou-Kazuki/Cloud_Dev_Study.git
 
 
 ◆リポジトリのクローン方法◆<strong>How to clone the repository</strong><br>
-1.git bashから、コマンド入力で行う。\
-2.VSCodeのフォルダ管理から行う。\
+1.git bashから、コマンド入力で行う。<br>
+2.VSCodeのフォルダ管理から行う。<br>
 今回は2の方法を利用します。<br>
 <strong>
 1.Do this by entering commands from git bash.<br>
@@ -231,6 +231,7 @@ Once the virtual machine is up and running, it will appear in the Azure Portal, 
 Press down on the basic page, followed by public IP address, virtual network/subnet, and then something like unconfigured underneath.<br>
 This is where you can configure the DNS (Domain Name System) setting<br>
 </strong><br>
+
 ```
 DNS is a system for naming IP addresses so that connections can be made based on those names, much like URLs on the web.
 If you are using RDP connections from a public IP address without DNS, the address will be reassigned every time you reboot the machine.
