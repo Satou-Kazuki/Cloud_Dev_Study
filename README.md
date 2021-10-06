@@ -1,7 +1,7 @@
 # 最近流行りのVPS or クラウドで仮想開発環境を構築しよう。
 # Let's build a virtual development environment with VPS or Cloud, which is popular these days.
 git,github,Docker,Vscode,クラウドサービス？なんですかそれは？という状態から、\
-それぞれの要点を掻い摘んで、なんとか形にしていった時の流れと参考にしたことをまとめました。\
+それぞれの要点を掻い摘んで、なんとか形にしていった時の流れと参考にしたことをまとめました。\\
 git,github,docker,vscode,cloud services? This is a summary of the process and references\
 I used when I went from knowing almost nothing to summarizing and shaping the key points of each.
 
