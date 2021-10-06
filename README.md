@@ -38,7 +38,7 @@ I used when I went from knowing almost nothing to summarizing and shaping the ke
 - クラウド上のリソースを用いることが出来る。（画像分析やテキスト分析等）<br>
 <strong>Resources in the cloud can be used. (Image analysis, text analysis, etc.)</strong>
 
-<strong></strong><br>
+
  →慣れたら仮想マシン作成、立ち上げから、開発環境一通り揃えるのに1時間ほどで行えます。とても速い。<br>
  <strong>
  Once you get used to it, it takes about an hour to create a virtual machine, 
@@ -97,13 +97,18 @@ However, the cloud service has AI data sets and other resources that can be used
 - Linuxを体系的に勉強するまとめ（linuxがからんでくるので、都度確認する用）
 - https://kitsune.blog/engineer/linux
 
-
+<strong></strong><br>
 # ゼロから環境構築
 # Build an environment from scratch
-◆Git、Docker、VSCodeインストール、Githubのアカウント作成◆\
-VSCode内、下記拡張機能インストールを行う。\
-【Japanese Language Pack , Python , Remote Development , Docker】\
-◆githubのリポジトリからローカル環境へクローンする。◆\
+◆Git、Docker、VSCodeインストール、Githubのアカウント作成◆<br>
+VSCode内、下記拡張機能インストールを行う。<br>
+<strong>
+Install Git, Docker, VSCode, and create a Github account.
+Install the following extensions in VSCode.
+</strong>
+【Japanese Language Pack , Python , Remote Development , Docker】<br>
+◆githubのリポジトリからローカル環境へクローンする。◆<br>
+<strong>Clone from the github repository to the local environment.</strong>
 https://github.com/Satou-Kazuki/Cloud_Dev_Study.git
 
 
