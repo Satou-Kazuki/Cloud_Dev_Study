@@ -8,7 +8,7 @@ I used it when I went from knowing almost nothing to summarizing and shaping the
 </strong>
 
 
-◆目的◆:<strong>Purpose</strong>
+◆目的◆<strong>Purpose</strong>
 - ローカル環境に、github,Docker,VScodeを用いて、仮想開発環境を構築。<br>
 <strong>Build a virtual development environment in the local environment using Github, Docker, and VScode.</strong>
 - クラウドサービス上に仮想マシンを起動させ、クラウド上に同じような仮想開発環境を構築。<br>
@@ -26,7 +26,7 @@ I used it when I went from knowing almost nothing to summarizing and shaping the
 
 
 
-◆クラウドマシン環境側でのメリット◆:<strong>Benefits on the cloud machine environment side</strong>
+◆クラウドマシン環境側でのメリット◆<strong>Benefits on the cloud machine environment side</strong>
 - クラウド上にて仮想マシンに環境を構築しているので、RDPで接続するだけで同一環境で作業ができます。<br>
 <strong>The environment is built on a virtual machine in the cloud, so you can work in the same environment just by connecting via RDP.</strong>
 - 環境を常時稼働させることが出来ます。（従量課金制なのでお金はかかります。1h10円程）<br>
@@ -112,19 +112,21 @@ Install the following extensions in VSCode.
 https://github.com/Satou-Kazuki/Cloud_Dev_Study.git
 
 
-◆リポジトリのクローン方法◆:<strong>How to clone the repository</strong><br>
+◆リポジトリのクローン方法◆<strong>How to clone the repository</strong><br>
 1.git bashから、コマンド入力で行う。\
 2.VSCodeのフォルダ管理から行う。\
 今回は2の方法を利用します。<br>
+<strong>
 1.Do this by entering commands from git bash.
 2.Do this from the folder management of VSCode.
 In this case, we will use method 2.
+<strong>
   
   
-◆クローン後の流れ◆:<strong>Flow after cloning</strong><br>
-クローンを行うと、指定したフォルダ配下にローカルリポジトリが作成され、リモートリポジトリのコピーが作成されます。\
-クローンしたCloud_Dev_Studyには、Dockerのコンテナファイルが入っていますので、\
-VSCode内にて、コンテナ作成の案内が来ます。OK押下しますと、イメージを元にコンテナ作成が行われます。\
+◆クローン後の流れ◆<strong>Flow after cloning</strong><br>
+クローンを行うと、指定したフォルダ配下にローカルリポジトリが作成され、リモートリポジトリのコピーが作成されます。<br>
+クローンしたCloud_Dev_Studyには、Dockerのコンテナファイルが入っていますので、<br>
+VSCode内にて、コンテナ作成の案内が来ます。OK押下しますと、イメージを元にコンテナ作成が行われます。<br>
 →今回使うイメージはjupyter/datascience-notebookでDockerHubに公開されているものを利用。<br>
 <strong>
 When you clone, a local repository is created under the specified folder and a copy of the remote repository is created.
@@ -133,29 +135,30 @@ The cloned Cloud_Dev_Study contains a Docker container file, so you will be prom
 </strong>
 
 
-◆コンテナについて◆:<strong>About containers</strong><br>
+◆コンテナについて◆<strong>About containers</strong><br>
 LinuxOSを元に、最小単一の機能で、必要なアプリをインストールした仮想環境という感じの物になります。<br>
 <strong>
 It is a virtual environment based on the Linux operating system, with a minimum of a single function, and the necessary applications installed.
 </strong>
 
 
-◆今回使っているイメージ◆:<strong>Image used in this project</strong><br>
+◆今回使っているイメージ◆<strong>Image used in this project</strong><br>
 OS:Linuxのubuntu-20.04\
-anaconda, python:3.9.6 , JupyterLab ,Various libraries\
+anaconda, python:3.9.6 , JupyterLab ,Various libraries
 
 
-◆VSCode Docker,Github連携について◆\About VSCode Docker and Github integration
-VSCode下部タスクバーみたいなところに><のようなアイコンがあり、\
-【><】の横にDev Container:Jupyter Projectと表示されます。\
-【><】のアイコンからコンテナを停止させる等操作が行えます。\
-※このタスクバーみたいなところに、現在利用してるインタプリタ等表示されます。\
-※タスクバー内、玉紐と↑↓はgithubへpull,commit,pushするための物になります。
-
+◆VSCode Docker,Github連携について◆<strong>About VSCode Docker and Github integration</strong><br>
+VSCode下部タスクバーみたいなところに><のようなアイコンがあり、<br>
+【><】の横にDev Container:Jupyter Projectと表示されます。<br>
+【><】のアイコンからコンテナを停止させる等操作が行えます。<br>
+※このタスクバーみたいなところに、現在利用してるインタプリタ等表示されます。<br>
+※タスクバー内、玉紐と↑↓はgithubへpull,commit,pushするための物になります。<br>
+<strong>
 There is a '><' like icon on the taskbar at the bottom of VSCode, with Dev Container:Jupyter Project next to '><'.
 You can stop the container from the '><' icon.
 This taskbar-like area will display the interpreter you are currently using.
 In the taskbar, the ball and ↑↓ are for pulling, committing, and pushing to github.
+</strong>
 
 
 ◆連携の流れ◆\Flow of collaboration
