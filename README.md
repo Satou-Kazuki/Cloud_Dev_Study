@@ -105,80 +105,107 @@ VSCode内、下記拡張機能インストールを行う。<br>
 <strong>
 Install Git, Docker, VSCode, and create a Github account.
 Install the following extensions in VSCode.
-</strong>
+</strong><br>
 【Japanese Language Pack , Python , Remote Development , Docker】<br>
 ◆githubのリポジトリからローカル環境へクローンする。◆<br>
-<strong>Clone from the github repository to the local environment.</strong>
+<strong>Clone from the github repository to the local environment.</strong><br>
 https://github.com/Satou-Kazuki/Cloud_Dev_Study.git
 
 
-◆リポジトリのクローン方法◆\
+◆リポジトリのクローン方法◆\How to clone the repository
 1.git bashから、コマンド入力で行う。\
 2.VSCodeのフォルダ管理から行う。\
 今回は2の方法を利用します。
+1.Do this by entering commands from git bash.
+2.Do this from the folder management of VSCode.
+In this case, we will use method 2.
   
   
-◆クローン後の流れ◆\
+◆クローン後の流れ◆\Flow after cloning
 クローンを行うと、指定したフォルダ配下にローカルリポジトリが作成され、リモートリポジトリのコピーが作成されます。\
 クローンしたCloud_Dev_Studyには、Dockerのコンテナファイルが入っていますので、\
 VSCode内にて、コンテナ作成の案内が来ます。OK押下しますと、イメージを元にコンテナ作成が行われます。\
 →今回使うイメージはjupyter/datascience-notebookでDockerHubに公開されているものを利用。
+When you clone, a local repository is created under the specified folder and a copy of the remote repository is created.
+The cloned Cloud_Dev_Study contains a Docker container file, so you will be prompted to create a container in VSCode
+→The image we will use is jupyter/datascience-notebook, which is available on DockerHub.
 
 
-◆コンテナについて◆\
+◆コンテナについて◆\About containers
 LinuxOSを元に、最小単一の機能で、必要なアプリをインストールした仮想環境という感じの物になります。
+It is a virtual environment based on the Linux operating system, with a minimum of a single function, and the necessary applications installed.
 
 
-◆今回使っているイメージ◆\
+◆今回使っているイメージ◆\Image used in this project
 OS:Linuxのubuntu-20.04\
-anaconda, python:3.9.6 , JupyterLab ,各種ライブラリがインストールされている。\
-上記マイクロOSのようなものがホストOS（ローカルのWINDOWS）上でゲストOSとして稼働しているようなイメージ。\
-コンテナの作成及び実行が問題なく行われれば、VScodeとコンテナの相互が連携している状態になる。
+anaconda, python:3.9.6 , JupyterLab ,Various libraries\
 
 
-◆VSCode Docker,Github連携について◆\
+◆VSCode Docker,Github連携について◆\About VSCode Docker and Github integration
 VSCode下部タスクバーみたいなところに><のようなアイコンがあり、\
 【><】の横にDev Container:Jupyter Projectと表示されます。\
 【><】のアイコンからコンテナを停止させる等操作が行えます。\
 ※このタスクバーみたいなところに、現在利用してるインタプリタ等表示されます。\
 ※タスクバー内、玉紐と↑↓はgithubへpull,commit,pushするための物になります。
 
+There is a '><' like icon on the taskbar at the bottom of VSCode, with Dev Container:Jupyter Project next to '><'.
+You can stop the container from the '><' icon.
+This taskbar-like area will display the interpreter you are currently using.
+In the taskbar, the ball and ↑↓ are for pulling, committing, and pushing to github.
 
-◆連携の流れ◆\
+
+◆連携の流れ◆\Flow of collaboration
 コンテナ内Linux環境下あるJupyterLabとpythonインタプリタへ、ローカルのVScodeからリモートでアクセスを行い、\
 ローカルで作業している感覚と変わらず作業が行えます。\
 /opt/conda/bin/pythonのPython 3.9.6のインタプリタが選択できれば、うまく連携出来ています。\
 /opt/conda/bin/pythonというディレクトリはコンテナLinux内ディレクトリとなります。
+You can remotely access JupyterLab and the python interpreter in the Linux environment in the container from your local VScode, and work as if you were working locally.
+If you can select the Python 3.9.6 interpreter in /opt/conda/bin/python, you have a good connection.
+The directory /opt/conda/bin/python is the directory in the container Linux.
 
 
 # ここまでくればgithub　リポジトリからコードを貰ったり上げたり、チーム開発を行えるようになっています。
+# You can now get code from the github repository, raise it, and do team development.
 
 
 # クラウドコンピューティングサービス利用（Azure）
+# Use of cloud computing services (Azure)
 - azureへアカウント作成：クレジットカードの登録が必要になります。
 - なしで利用する場合・・・https://www.acrovision.jp/service/azure/?p=1258
 - Azureでクラウド上リソースの利用に際して、従量課金制となり、お金はかかります。（Azureは30日$200分無料）
 - 参考：標準的な仮想マシン、1H毎10円 1ヵ月フル稼働で9000円ほど（リソースの利用具合によっても変わります）
-
+- Create an account with azure: You will need to register a credit card.
+- To use it without... https://www.acrovision.jp/service/azure/?p=1258
+- When you use resources in the cloud with Azure, you will be charged on a pay-as-you-go basis. (Azure is free for 30 days and $200 minutes)
+- Reference: Standard virtual machine, 10 yen per 1 hour, about 9,000 yen per month of full operation (depending on how the resources are used)
 
 # Azure Portalでクラウド上にLinux仮想マシンを作成（windows環境とかもあります）
-◆注意点◆\
+# Create a Linux virtual machine in the cloud with Azure Portal (windows environment is also available)
+◆注意点◆\Points to note
 作成の流れ自体はその辺のサイトに書いている内容で問題ありませんが、下記注意点あり。\
 初期設定でSSH:22、RDP:3389のポート開放をチェック→　あとで設定はできますが、最初にしてるほうが楽。\
 ポート番号22：SSH接続で使うポート\
 ポート番号3389：こちら側から仮想マシンへリモートデスクトップするために使うポート
+The creation process itself is fine as described in those sites, but there are some cautions below.
+Check the SSH:22 and RDP:3389 port openings in the default settings → You can set this later, but it is easier to do it first.
+Port number 22: Port used for SSH connection
+Port number 3389: Port used for remote desktop from our side to the virtual machine.
 
 
-◆SSH接続について◆\
+◆SSH接続について◆\About SSH connection
 【******(設定したユーザー名).pem】という秘密鍵がダウンロードされますが、これがパスワードの代わりのようなものになります。\
 →しっかりと保存する。\
 最初Linux環境にパスワードが設定されていない状態なので、SSHで接続を行います。\
 Azure CLIか Tera Termのようなもので接続する必要があります。
 ・Teratarm:端末へSSH接続を行うためのソフト。インストールします。
+A private key named [******(username you set).pem] will be downloaded, which is a kind of password substitute.
+Since there is no password set in the Linux environment at first, we will use SSH to connect.
+You will need to use Azure CLI or something like Tera Term to connect.
+Teratarm: A software for SSH connection to the terminal. Install it.
 
 
 # Azure PortalとTeraterm
-◆Azure Portal　仮想マシンページ◆\
+◆Azure Portal◆\
 仮想マシンが立ち上がると、Azure Portalに表示された状態になり、開始、再起動、停止やその他設定が行えます。\
 基本ページ、パブリックIPアドレス、仮想ネットワーク／サブネットと続き、その下の未設定みたいなところを押下。\
 ここでDNS（ドメインネームシステム）を設定が出来るので、設定します。
@@ -187,13 +214,25 @@ DNSとは・・IPアドレスに名前を付けて、その名前を元に接続
 これなしでパブリックIPアドレスからRDP接続を行っていると、マシンを起動しなおす毎にアドレスが振りなおされ
 一々確認して入力する必要が生じ、面倒です。
 ```
+Once the virtual machine is up and running, it will appear in the Azure Portal, where you can start, restart, stop and configure other settings.
+Press down on the basic page, followed by public IP address, virtual network/subnet, and then something like unconfigured underneath.
+This is where you can configure the DNS (Domain Name System) setting
+```
+DNS is a system for naming IP addresses so that connections can be made based on those names, much like URLs on the web.
+If you are using RDP connections from a public IP address without DNS, the address will be reassigned every time you reboot the machine.
+If you are using RDP connections from a public IP address without this, the address will be reassigned every time you reboot the machine, and you will have to check and enter the address every time.
+```
 
 
-◆Teratermでの接続について◆\
+◆Teratermでの接続について◆\About the connection with Teraterm
 Teratermに設定したDNS名（パブリックIPアドレスでも構わない）を入力して、SSHで接続を行います。\
 何か表示されますが、そのままOKして設定したSSH接続で設定した【ユーザー名】入力と、\
 →Teratermは初期画面でSSH ポート番号22を指定します。\
 認証方式で【RSA/DSA/ECDSA/ED25519鍵を使う】を選択し、【******(設定したユーザー名).pem】を選択してSSH接続を行う。
+Enter the DNS name (or public IP address) that you configured on Teraterm, and connect to the server via SSH.
+You will be prompted something, OK as it is and enter the [User name] configured in the SSH connection you set up.
+→Teraterm specifies the SSH port number 22 in the initial screen.
+Select [Use RSA/DSA/ECDSA/ED25519 key] for the authentication method and select [******(username you set).pem] to connect to SSH.
 
 
 【Install and configure xrdp to use Remote Desktop with Ubuntu】\
@@ -201,8 +240,11 @@ Teratermに設定したDNS名（パブリックIPアドレスでも構わない�
 
 
 # クラウドマシンへ接続のち下記実施
+# Connect to the cloud machine and do the following
 Azure CLIインストール\
 Linux側リモート接続するためのアプリをコマンドでインストールします。
+Azure CLI installation
+Install the application for remote connection on the Linux side using the command.
 ```
 sudo apt-get update
 sudo apt-get -y install xfce4
@@ -214,15 +256,20 @@ sudo service xrdp restart
 ```
 - 仮想マシンにパスワードを設定します。\
 →sudo passwd (入れたいパスワード）下記いれるとazureuserというパスワードが設定されます。
+- Set a password for the virtual machine.
+→sudo passwd (the password you want to enter) Enter the following to set the password as azureuser.
 ```
 sudo passwd azureuser
 ```
 - Azure CLIインストールした後、windows powershellで下記コマンド実施します。\
  【myResourceGroup】に自分のリソースグループ名、【myVM】に自分の仮想マシン名をいれます。
+- After installing Azure CLI, execute the following command in windows powershell.
+ Enter your resource group name in [myResourceGroup] and your virtual machine name in [myVM].
 ```
 az vm open-port --resource-group myResourceGroup --name myVM --port 3389
 ```
 以上、ubuntuデスクトップへのリモート接続の準備完了となります。
+This completes the preparation for remote connection to the ubuntu desktop.
 
 
 # ローカルマシンからクラウドマシンへリモート接続
@@ -238,6 +285,7 @@ az vm open-port --resource-group myResourceGroup --name myVM --port 3389
 
 
 # Ubuntuへデスクトップ接続出来た後、下記各種設定行う。
+# Once you have a desktop connection to Ubuntu, configure the following settings.
 - VM起動後の開発環境セットアップ(Linux)
 - https://dotnetdevelopmentinfrastructure.osscons.jp/index.php?VM%E8%B5%B7%E5%8B%95%E5%BE%8C%E3%81%AE%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%EF%BC%88Linux%EF%BC%89
 - Azure VMでLinuxインスタンスを起動したら最初にやっておくべき設定
@@ -245,6 +293,7 @@ az vm open-port --resource-group myResourceGroup --name myVM --port 3389
 
 
 # 参考
+# Reference
 - Azure で Linux 仮想マシンを作成する
 - https://docs.microsoft.com/ja-jp/learn/modules/create-linux-virtual-machine-in-azure/
 - Azure VM (Ubuntu Server 20.04 LTS) に GNOME + TigerVNC + xrdp を導入、リモート デスクトップ接続を行う
@@ -256,6 +305,7 @@ az vm open-port --resource-group myResourceGroup --name myVM --port 3389
 
 
 # Linux関連
+# Linux related
 - bashで始めるシェルスクリプト基礎の基礎
 - https://atmarkit.itmedia.co.jp/ait/articles/0202/05/news001.html
 - シェルスクリプトを定期実行してみよう
@@ -284,6 +334,7 @@ az vm open-port --resource-group myResourceGroup --name myVM --port 3389
 - https://www.bing.com/search?q=github&form=ANNTH1&refig=1ea1c6befe73420d885d577f90824c53
 
 #VPS関連
+#VPS related
 - ご利用ガイド マンガで学ぶConoHa
 - https://support.conoha.jp/v/study-03/?btn_id=v-study-02-sidebar_v-study-03
 - ネコでもわかる！さくらのVPS講座 〜第一回：VPSてなんだろう？〜
