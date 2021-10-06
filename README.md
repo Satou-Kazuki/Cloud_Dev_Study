@@ -6,27 +6,38 @@ git,github,docker,vscode,cloud services? This is a summary of the process and re
 I used when I went from knowing almost nothing to summarizing and shaping the key points of each.
 
 
-◆目的◆
+◆目的◆:purpose
 - ローカル環境に、github,Docker,VScodeを用いて、仮想開発環境を構築。
-- ->Build a virtual development environment in the local environment using github, Docker, and VScode.
+- Build a virtual development environment in the local environment using github, Docker, and VScode.
+
 - クラウドサービス上に仮想マシンを起動させ、クラウド上に同じような仮想開発環境を構築。
-- ->Start a virtual machine on the cloud service and build a similar virtual development environment in the cloud.
+- Start a virtual machine on the cloud service and build a similar virtual development environment in the cloud.
 
 
-◆ローカルマシン環境でのメリット◆
+◆ローカルマシン環境側でのメリット◆Benefits on the local machine environment side
 - パソコンごとに環境の選択やライブラリの選択や細々とした設定インストールをする必要がなくなります。
+- You no longer need to choose an environment, select a library, and install detailed settings for each computer.
+
+
 - コンテナ単位で環境を構築するので、問題が生じた環境の破棄及び再生成が容易になります。
+- Since the environment is built in containers, it is easy to destroy and regenerate the environment if a problem occurs.
+
+
 - 先人が作成してくれた環境のパッケージを用いることにより、最小の労力で環境構築が行えます。
+- By using the environment packages created by our predecessors, we can build the environment with minimal effort.
 
 
-◆クラウドマシン環境でのメリット◆←仮想マシン程度の利用ならVPSでサーバ立てたほうが安い・・
+◆クラウドマシン環境側でのメリット◆:Benefits on the cloud machine environment side
 - クラウド上にて仮想マシンに環境を構築しているので、RDPで接続するだけで同一環境で作業ができます。
-- 環境を常時稼働させることが出来ます。（従量課金制なのでお金はかかります。1h10円くらい・・？）
+- The environment is built on a virtual machine in the cloud, so you can work in the same environment just by connecting via RDP.
+- 環境を常時稼働させることが出来ます。（従量課金制なのでお金はかかります。1h10円程）
+- You can run the environment all the time. (It's a pay-as-you-go system, so you will have to pay for it, about 10 yen per hour.
 - 耐障害性が高い。
-- 仮想マシンの破棄、再生成が容易。
-- 仮想マシンなので、何個でも生成できますし、複数稼働もできます。（従量課金制・・・・以下略
-- クラウド上のマシンリソースを利用してるので、ローカル環境には負担がほぼかかりません。
+- High fault tolerance.
+- マシンリソースのグレードアップが容易。
+- Easy to upgrade machine resources
 - クラウド上のリソースを用いることが出来る。（画像分析やテキスト分析等）
+- Resources in the cloud can be used. (Image analysis, text analysis, etc.)
 
 
  →慣れたら仮想マシン作成、立ち上げから、開発環境一通り揃えるのに1時間ほどで行えます。とても速い。
