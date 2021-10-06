@@ -230,7 +230,7 @@ DNSとは・・IPアドレスに名前を付けて、その名前を元に接続
 Once the virtual machine is up and running, it will appear in the Azure Portal, where you can start, restart, stop and configure other settings.<br>
 Press down on the basic page, followed by public IP address, virtual network/subnet, and then something like unconfigured underneath.<br>
 This is where you can configure the DNS (Domain Name System) setting<br>
-</strong>
+</strong><br>
 ```
 DNS is a system for naming IP addresses so that connections can be made based on those names, much like URLs on the web.
 If you are using RDP connections from a public IP address without DNS, the address will be reassigned every time you reboot the machine.
