@@ -378,5 +378,5 @@ This completes the preparation for remote connection to the ubuntu desktop.
 - https://www.server-world.info/query?os=Ubuntu_21.04&p=desktop&f=5
 - ConohaでUbuntu 18.04のVPSを立ち上げ、Djangoをデプロイ（Nginx+Gunicorn）
 - https://qiita.com/lukapla/items/e5ea1f77ccaecdeb69c9
--【Ubuntu】公開鍵認証によるSSH接続の設定（公開鍵・秘密鍵の作成）
+- 【Ubuntu】公開鍵認証によるSSH接続の設定（公開鍵・秘密鍵の作成）
 - https://self-development.info/%e3%80%90ubuntu%e3%80%91%e5%85%ac%e9%96%8b%e9%8d%b5%e8%aa%8d%e8%a8%bc%e3%81%ab%e3%82%88%e3%82%8bssh%e6%8e%a5%e7%b6%9a%e3%81%ae%e8%a8%ad%e5%ae%9a%ef%bc%88%e5%85%ac%e9%96%8b%e9%8d%b5%e3%83%bb%e7%a7%98/
