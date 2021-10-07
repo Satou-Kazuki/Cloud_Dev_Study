@@ -382,3 +382,5 @@ This completes the preparation for remote connection to the ubuntu desktop.
 - https://self-development.info/%e3%80%90ubuntu%e3%80%91%e5%85%ac%e9%96%8b%e9%8d%b5%e8%aa%8d%e8%a8%bc%e3%81%ab%e3%82%88%e3%82%8bssh%e6%8e%a5%e7%b6%9a%e3%81%ae%e8%a8%ad%e5%ae%9a%ef%bc%88%e5%85%ac%e9%96%8b%e9%8d%b5%e3%83%bb%e7%a7%98/
 - 公開鍵をauthorized_keysに一撃で追加する。
 - https://twkmn.hateblo.jp/entry/2018/06/01/200814
+- VSCodeでDjangoを実行時に［ImportError］が表示される場合の対処法
+https://blog.janjan.net/2021/02/01/python-django-uses-visual-studio-code-import-error-could-not-import-django-2/
