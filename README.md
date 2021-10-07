@@ -384,3 +384,5 @@ This completes the preparation for remote connection to the ubuntu desktop.
 - https://twkmn.hateblo.jp/entry/2018/06/01/200814
 - VSCodeでDjangoを実行時に［ImportError］が表示される場合の対処法
 https://blog.janjan.net/2021/02/01/python-django-uses-visual-studio-code-import-error-could-not-import-django-2/
+- Django を VSCode で 開発するまでの手順
+- https://qiita.com/soh506/items/12a5df2d19f1c2c792fe
