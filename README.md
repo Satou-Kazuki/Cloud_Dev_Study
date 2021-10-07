@@ -154,7 +154,7 @@ VSCode下部タスクバーみたいなところに><のようなアイコンが
 ※このタスクバーみたいなところに、現在利用してるインタプリタ等表示されます。<br>
 ※タスクバー内、玉紐と↑↓はgithubへpull,commit,pushするための物になります。<br>
 <strong>
-There is a '><' like icon on the taskbar at the bottom of VSCode, with Dev Container:Jupyter Project next to '><'.
+There is a [><] like icon on the taskbar at the bottom of VSCode, with Dev Container:Jupyter Project next to [><].
 You can stop the container from the '><' icon.
 This taskbar-like area will display the interpreter you are currently using.
 In the taskbar, the ball and ↑↓ are for pulling, committing, and pushing to github.
