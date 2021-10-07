@@ -376,3 +376,5 @@ This completes the preparation for remote connection to the ubuntu desktop.
 - https://qiita.com/takao-takass/items/9f81d5095924280966ae
 - デスクトップ環境 : VNC サーバーの設定
 - https://www.server-world.info/query?os=Ubuntu_21.04&p=desktop&f=5
+- ConohaでUbuntu 18.04のVPSを立ち上げ、Djangoをデプロイ（Nginx+Gunicorn）
+- https://qiita.com/lukapla/items/e5ea1f77ccaecdeb69c9
