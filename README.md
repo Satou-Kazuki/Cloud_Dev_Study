@@ -386,3 +386,5 @@ This completes the preparation for remote connection to the ubuntu desktop.
 https://blog.janjan.net/2021/02/01/python-django-uses-visual-studio-code-import-error-could-not-import-django-2/
 - Django を VSCode で 開発するまでの手順
 - https://qiita.com/soh506/items/12a5df2d19f1c2c792fe
+- DockerでDjangoの開発環境を構築！（Docker-compose/Django/postgreSQL/nginx）
+- https://qiita.com/nokonoko_1203/items/242367a83c313a5e46bf
